@@ -24,6 +24,7 @@ GREY: #343a40
 body{
     font-family: 'Inter',sans-serif; 
     border-bottom: 10px solid #087f5b;
+    color:#343a40;
 }
 
 header{
@@ -34,6 +35,10 @@ header{
     margin-bottom: 98px;
 }
 header h1{
+    margin-bottom: 20px;
+}
+
+.header-text{
     margin-bottom: 20px;
 }
 
@@ -58,15 +63,50 @@ blockquote{
     letter-spacing: 0px;
 }
 
-.header-text{
-    margin-bottom: 20px;
+img{
+    width: 100%;
+    margin-bottom: 32px;
+    border-radius: 10px;
 }
 
+footer{
+    color:#495057;
+    font-size:14px;
+    margin-bottom: 48px;
+}
 
+/* Links */
+
+.btn{
+    border-radius: 100px;
+}
+
+.btn:link,
+.btn:visited{
+    background-color: #087f5b;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #099268;
+}
+
+.btn-big{
+    padding: 12px 18px; 
+    display: inline-block;
+}
+.btn-small{
+    padding: 8px 12px   ;
+}
 
 /* feature section */
 .feature-title{
     margin-bottom: 24px;
+    font-size: 20px;
 }
 
 .feature-text{
@@ -92,6 +132,9 @@ blockquote{
 
 }
 
+.testimonial-box h2{
+    font-size: 24px;
+}
 .testimonial-text{
     line-height: 1.6;
     letter-spacing: -0.5px; 
@@ -108,8 +151,26 @@ blockquote{
 .price-info{
     display:flex ;
     justify-content: space-between;
+    font-size: 20px;
 }
 
+.chair{
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.chair-box{
+    padding: 24px;
+}
+
+.chair-box li{
+    display: flex;
+    align-items: center;
+    gap:12px;
+}
+
+li:last-child{
+    margin-bottom: 24px;
+}
 
 /* smaller elements */
 h1{
@@ -117,18 +178,35 @@ h1{
 }
 
 h2{
-    margin-bottom:32px;
+    margin-bottom:48px;
+    font-size:36px;
 }
 
 h3{
     margin-bottom: 24px;
 }
+
+
 li{
     list-style: none;
     margin-bottom: 16px;
 }
-img{
-    width: 100%;
-    margin-bottom: 32px;
-    border-radius: 10px;
+
+strong{
+    font-weight: bold;
+}
+.chairs img{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.feature-list{
+    height: 24px;
+    width: 24px;
+    stroke: #087f5b;
+}
+.features-icon{
+    height: 32px;
+    width: 32px;
+    stroke: #087f5b;
+    margin-bottom: 24px;
 }
